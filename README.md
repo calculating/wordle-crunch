@@ -1,0 +1,2 @@
+# wordle
+mathematically solving wordle
