@@ -4,6 +4,7 @@ guesses = ["aahed", "aalii", "aargh", "aarti", "abaca", "abaci", "abacs", "abaft
 r1 = "alert"
 r2 = "sonic"
 
+/*
 function remove_duplicate(string)
 {
    return string.split('')
@@ -17,12 +18,46 @@ function remove_duplicate(string)
 function amalgamation(item, index) {
   big_string+=remove_duplicate(item);
 }
-/*
+
 big_string = "";
 solutions.forEach(amalgamation);
 console.log(big_string)
 */
 
 function round_three(solution) {
-   
+   pattern = ''
+   temp_sol = solution
+   for (var i = 0; i < solution.length; i++) {
+      if (r1.charAt(i)==solution.charAt(i)) {
+         pattern += '2'
+         temp_sol = temp_sol.slice(0, i) + '0' + temp_sol.slice(i+1);
+      } else {
+         pattern += '0'
+      }
+   }
+   for (var i = 0; i < solution.length; i++) {
+      if (temp_sol.includes(r1.charAt(i))) {
+         pattern += '1'
+      } else {
+         pattern += '0'
+      }
+   }
+      temp_sol = solution
+   for (var i = 0; i < solution.length; i++) {
+      if (r2.charAt(i)==solution.charAt(i)) {
+         pattern += '2'
+         temp_sol = temp_sol.slice(0, i) + '0' + temp_sol.slice(i+1);
+      } else {
+         pattern += '0'
+      }
+   }
+   for (var i = 0; i < solution.length; i++) {
+      if (temp_sol.includes(r2.charAt(i))) {
+         pattern += '1'
+      } else {
+         pattern += '0'
+      }
+   }
 }
+solution_dictionary = []
+solutions.forEach(round_three)
