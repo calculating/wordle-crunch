@@ -64,7 +64,9 @@ function round_three(solution) {
    } else {
       solution_dictionary[pattern] = solution
    }
+   //console.log(pattern)
    
 }
-solution_dictionary = []
+solution_dictionary = {}
 solutions.forEach(round_three)
+console.log(solution_dictionary)
