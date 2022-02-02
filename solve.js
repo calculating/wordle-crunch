@@ -55,22 +55,6 @@ function round_three(solution) {
          pattern += '0'
       }
    }
-   temp_sol = solution
-   for (var i = 0; i < solution.length; i++) {
-      if (r3.charAt(i)==solution.charAt(i)) {
-         pattern += '2'
-         temp_sol = temp_sol.slice(0, i) + '0' + temp_sol.slice(i+1);
-      } else {
-         pattern += '0'
-      }
-   }
-   for (var i = 0; i < solution.length; i++) {
-      if (temp_sol.includes(r3.charAt(i))) {
-         pattern += '1'
-      } else {
-         pattern += '0'
-      }
-   }
    
    if (solution_dictionary[pattern] !== undefined) {
       solution_dictionary[pattern] += solution
@@ -98,7 +82,6 @@ function scorethis(dicty) {
 
 r1 = "alert"
 r2 = "sonic"
-r3 = "dumpy"
 solution_dictionary = {}
 solutions.forEach(round_three)
 scorethis(solution_dictionary)
