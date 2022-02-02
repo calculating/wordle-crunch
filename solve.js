@@ -67,6 +67,73 @@ function round_three(solution) {
    //console.log(pattern)
    
 }
+
+function scorethis(dicty) {
+   score = 0
+   one = 0
+   for (var key in solution_dictionary){
+      score += solution_dictionary[key].length
+      if (solution_dictionary[key].length == 5) {
+         one++
+      }
+   }
+   score = score/(5*Object.keys(solution_dictionary).length)
+   console.log(score)
+   console.log(one)
+}
+
+r1 = "alert"
+r2 = "sonic"
 solution_dictionary = {}
 solutions.forEach(round_three)
-console.log(solution_dictionary)
+scorethis(solution_dictionary)
+r1 = "acton"
+r2 = "riels"
+solution_dictionary = {}
+solutions.forEach(round_three)
+scorethis(solution_dictionary)
+r1 = "acorn"
+r2 = "stiel"
+solution_dictionary = {}
+solutions.forEach(round_three)
+scorethis(solution_dictionary)
+r1 = "aster"
+r2 = "colin"
+solution_dictionary = {}
+solutions.forEach(round_three)
+scorethis(solution_dictionary)
+r1 = "raise"
+r2 = "donut"
+solution_dictionary = {}
+solutions.forEach(round_three)
+scorethis(solution_dictionary)
+r1 = "roate"
+r2 = "sling"
+solution_dictionary = {}
+solutions.forEach(round_three)
+scorethis(solution_dictionary)
+r1 = "sound"
+r2 = "cramp"
+solution_dictionary = {}
+solutions.forEach(round_three)
+scorethis(solution_dictionary)
+r1 = "notes"
+r2 = "acrid"
+solution_dictionary = {}
+solutions.forEach(round_three)
+scorethis(solution_dictionary)
+r1 = "resin"
+r2 = "loath"
+solution_dictionary = {}
+solutions.forEach(round_three)
+scorethis(solution_dictionary)
+r1 = "tares"
+r2 = "chino"
+solution_dictionary = {}
+solutions.forEach(round_three)
+scorethis(solution_dictionary)
+r1 = "senor"
+r2 = "ducat"
+solution_dictionary = {}
+solutions.forEach(round_three)
+scorethis(solution_dictionary)
