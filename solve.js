@@ -58,6 +58,13 @@ function round_three(solution) {
          pattern += '0'
       }
    }
+   
+   if (solution_dictionary[pattern] !== undefined) {
+      solution_dictionary[pattern] += solution
+   } else {
+      solution_dictionary[pattern] = solution
+   }
+   
 }
 solution_dictionary = []
 solutions.forEach(round_three)
