@@ -84,4 +84,5 @@ r1 = "alert"
 r2 = "sonic"
 solution_dictionary = {}
 solutions.forEach(round_three)
+console.log(solution_dictionary)
 scorethis(solution_dictionary)
